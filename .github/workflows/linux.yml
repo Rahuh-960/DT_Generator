@@ -30,7 +30,7 @@ jobs:
             cd
             git clone https://github.com/Rahuh-960/HomeBot.git Homebot
    
-       - name: Sync recovery source and device tree
+       - name: Lets Start the bot
          run: |
             cd
             cd Homebot
