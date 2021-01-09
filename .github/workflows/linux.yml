@@ -30,7 +30,7 @@ jobs:
          run: |
             cd
             cd Homebot
-            pip install .
+            pip3 install .
             python3 -m homebot
             
             
