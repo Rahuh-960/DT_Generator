@@ -1,4 +1,4 @@
-name: Building OrangeFox Recovery without any PC 
+name: DT Generator Bot
 
 on: workflow_dispatch
 
