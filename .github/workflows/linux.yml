@@ -25,6 +25,9 @@ jobs:
             bash
             cd
             git clone https://github.com/Rahuh-960/HomeBot.git Homebot
+            cd Homeboy/HomeBot/
+            cat config.env
+            cd
    
        - name: Lets Start the bot
          run: |
