@@ -29,8 +29,8 @@ jobs:
        - name: Lets Start the bot
          run: |
             cd
-            cd Homebot
-            pip3 install .
+            cd Homebot/HomeBot/
+            pip install .
             python3 -m homebot
             
             
