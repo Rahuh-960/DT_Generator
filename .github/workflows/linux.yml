@@ -24,7 +24,7 @@ jobs:
             sudo -E apt-get clean 
             sudo -E apt-get -qq update
         
-        - name: Git cloning the bot
+       - name: Git cloning the bot
          run: |
             bash
             cd
@@ -38,9 +38,9 @@ jobs:
             python3 -m homebot
             
             
-        - name: Loop Workflow
-        continue-on-error: true
-        run: |
+       - name: Loop Workflow
+         continue-on-error: true
+         run: |
           # ${GITHUB_REPOSITORY} is the repo slug which runs this script
           git clone https://${{ secrets.GH_TOKEN }}@github.com/Rahuh-960/DT_Generator loop
           cd loop || exit 1
