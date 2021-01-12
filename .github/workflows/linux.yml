@@ -25,15 +25,16 @@ jobs:
             bash
             cd
             git clone https://github.com/Rahuh-960/HomeBot.git Homebot
-            cd Homebot/HomeBot/
+            cd Homebot
             cat config.env
             cd
    
        - name: Lets Start the bot
          run: |
             cd
-            cd Homebot/HomeBot/
+            cd Homebot
             pip install .
+            sed -i 's/testing/{{secrets.GH_TOKEN}}/g' config.env
             python3 -m homebot
             
             
