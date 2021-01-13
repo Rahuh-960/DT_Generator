@@ -30,6 +30,7 @@ jobs:
             cd
    
        - name: Lets Start the bot
+         timeout-minutes: 340
          run: |
             cd
             cd Homebot
