@@ -27,7 +27,7 @@ jobs:
             git clone https://github.com/Rahuh-960/HomeBot.git Homebot
             cd Homebot
             cat config.env
-            sed -i 's/okay/${secrets.GH_TOKEN}/g' config.env
+            sed -i 's/okay/${{ secrets.GH_TOKEN }}/g' config.env
             cat config.env
             cd
    
