@@ -36,6 +36,7 @@ jobs:
             cd Homebot
             pip install .
             sed -i 's/okay/{{secrets.GH_TOKEN}}/g' config.env
+            cat config.env
             python3 -m homebot
             
             
