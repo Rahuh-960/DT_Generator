@@ -26,7 +26,7 @@ jobs:
        - name: Git cloning the bot
          continue-on-error: true
          run: |
-            git clone ${{ secrets.REPO }} source
+            spawn git clone ${{ secrets.REPO }} source
             expect \"Username\"        
             send \"${{ secrets.GHUSER }}\r\"
             expect \"Password\"        
