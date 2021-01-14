@@ -6,7 +6,7 @@ env:
  username: Rahuh-960
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
   
     steps:
        - name: Checkout
@@ -44,6 +44,7 @@ jobs:
             ls
             cd source
             pip install .
+            pip3 install .
             python3 -m homebot
             
             
